@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark</title>
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.3.0-dist/css/bootstrap.min.css"
+    />
+    <!-- myStyle -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- icons fontawsome -->
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.4.0-web/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a
+            class="navbar-brand d-flex justify-content-center align-items-center"
+            href="#"
+          >
+            <img src="./imgs/logo@2x.png" alt="logo-img" class="me-3" />
+            <div class="lh-13">
+              <h1 class="mb-1 fs-6">Weather</h1>
+              <small class="fs-11 text-white-50">tagline goes here</small>
+            </div>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link rounded-pill px-3 me-2 active"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link rounded-pill px-3 me-2" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link rounded-pill px-3 me-2" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link rounded-pill px-3 me-2" href="#"
+                  >Live Cameras</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link rounded-pill px-3 me-2" href="#">Photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link rounded-pill px-3 me-2" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="main py-5">
+      <div class="container">
+        <form class="position-relative mb-4">
+          <input
+            type="text"
+            placeholder="Find Your location... "
+            class="w-100 search border-0 text-white px-3 py-3 rounded-pill"
+            id="search-input"
+          />
+          <button
+            type="submit"
+            class="find-btn position-absolute border-0 text-white rounded-pill px-5 py-2"
+            id="submit"
+          >
+            Find
+          </button>
+        </form>
+
+        <div
+          class="Weather-table text-white text-center row rounded-4 overflow-hidden"
+        >
+          <div class="col-4 px-0 text-start">
+            <div class="simi-dark d-flex justify-content-between py-2">
+              <span id="day1-name" class="ps-3">Thursday</span>
+              <span id="d1-month1-name" class="pe-3 ms-auto">3August</span>
+            </div>
+
+            <div class="px-4 py-4">
+              <div id="city-name">Cairo</div>
+              <div
+                class="row justify-content-center align-items-center mb-4 mt-1"
+              >
+                <div id="temperature" class="col-9 fw-bold fs-70">
+                  32<sup>o</sup>C
+                </div>
+                <div class="col-3">
+                  <img id="d1-img-icon" src="./imgs/113.png" alt="sun" />
+                </div>
+              </div>
+
+              <div id="d1-condition" class="sunny mb-4">Sunny</div>
+              <span class="me-2">
+                <img
+                  class="card-icon"
+                  src="./imgs/icon-umberella@2x.png"
+                  alt="umberella"
+                />
+                <span id="humidity"> 20% </span>
+              </span>
+              <span class="me-2">
+                <img
+                  class="card-icon"
+                  src="./imgs/icon-wind@2x.png"
+                  alt="wind-speed"
+                />
+                <span id="wind-speed"> 18km/h </span>
+              </span>
+              <span class="me-2">
+                <img
+                  class="card-icon"
+                  src="./imgs/icon-compass@2x.png"
+                  alt="wind-dir"
+                />
+                <span id="wind-dir"> East </span>
+              </span>
+            </div>
+          </div>
+          <div id="dayIndex1" class="col-4 mid px-0">
+            <div class="simi-dark py-2">Friday</div>
+            <div class="px-3 py-5">
+              <div class="mb-3"><img src="./imgs/113.png" alt="Weather" /></div>
+              <div class="temp">41.7<sup>o</sup>C</div>
+              <small class="text-white-50 d-inline-block mb-3"
+                >26.3<sup>o</sup></small
+              >
+              <div class="sunny">Sunny</div>
+            </div>
+          </div>
+          <div id="dayIndex2" class="col-4 px-0">
+            <div class="simi-dark py-2">Saturday</div>
+            <div class="px-3 py-5">
+              <div class="mb-3"><img src="./imgs/113.png" alt="Weather" /></div>
+              <div class="temp">41.7<sup>o</sup>C</div>
+              <small class="text-white-50 d-inline-block mb-3"
+                >26.3<sup>o</sup></small
+              >
+              <div class="sunny">Sunny</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-8">
+            <form class="position-relative mb-4">
+              <input
+                type="text"
+                placeholder="Find Your location... "
+                class="w-100 search border-0 text-white px-3 py-3 rounded-pill"
+              />
+              <button
+                type="submit"
+                class="find-btn position-absolute border-0 text-white rounded-pill px-3 py-2"
+              >
+                Subscribe
+              </button>
+              <sider-quick-compose-btn
+                data-gpts-theme="light"
+              ></sider-quick-compose-btn>
+            </form>
+            <p class="text-white">
+              Copyright 2014 Company name. Designed by Themezy. All rights
+              reserved
+            </p>
+          </div>
+          <div class="col-4 text-center d-flex justify-content-end">
+            <span class="footer-i-div me-2">
+              <i class="fa-brands fa-facebook-f"></i>
+            </span>
+            <span class="footer-i-div me-2">
+              <i class="fa-brands fa-twitter"></i>
+            </span>
+            <span class="footer-i-div me-2">
+              <i class="fa-brands fa-google-plus-g"></i>
+            </span>
+            <span class="footer-i-div me-2">
+              <i class="fa-brands fa-pinterest"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

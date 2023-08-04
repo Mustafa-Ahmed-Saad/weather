@@ -1,0 +1,106 @@
+.lh-13 {
+  line-height: 13px;
+}
+
+.fs-11 {
+  font-size: 11px;
+}
+
+.fs-70 {
+  font-size: 70px;
+}
+.h-285 {
+  height: 285px;
+}
+
+body {
+  background-color: #1e202b;
+}
+
+nav {
+  height: 140px;
+}
+
+.navbar-dark,
+.navbar[data-bs-theme="dark"] {
+  --bs-navbar-color: #fff;
+  --bs-navbar-hover-color: #009ad8;
+  --bs-navbar-active-color: #009ad8;
+}
+
+.nav-link {
+  border: 2px solid transparent;
+}
+
+.nav-link:hover {
+  border-color: #009ad8;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: #009ad8;
+  border-color: #009ad8;
+}
+
+.navbar-brand img {
+  width: 50px;
+}
+
+.main {
+  background-image: url(./imgs/banner.png);
+  background-size: auto 280px;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.search {
+  background: #1e202b;
+  outline: unset;
+}
+
+.find-btn {
+  outline: unset;
+  background-color: #009ad8;
+  right: 8px;
+  top: 8px;
+}
+
+.Weather-table > div {
+  background-color: #323544;
+}
+
+.Weather-table div.mid {
+  background-color: #262936;
+}
+
+.sunny {
+  color: #009ad8;
+}
+
+.simi-dark {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+  width: 20px;
+}
+
+footer {
+  background-color: #323544;
+}
+
+.footer-i-div {
+  background-color: #1e202b;
+  color: #009ad8;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-i-div:hover {
+  color: #fff;
+  background-color: #009ad8;
+}
