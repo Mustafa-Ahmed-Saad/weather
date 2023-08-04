@@ -68,7 +68,7 @@ async function getWeather(position) {
 
     const response = await fetch(
       `http://api.weatherapi.com/v1/forecast.json?key=${API_WEATHER_KEY}&q=${lat},${lng}&days=3&aqi=no&alerts=no`,
-      { method: "GET" }
+      { method: "GET", mode: "no-cors" }
     );
     const result = await response.json();
 
