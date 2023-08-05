@@ -67,8 +67,8 @@ async function getWeather(position) {
     const lng = position.coords.longitude;
 
     const response = await fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=${API_WEATHER_KEY}&q=${lat},${lng}&days=3&aqi=no&alerts=no`,
-      { method: "GET", mode: "no-cors" }
+      `https://api.weatherapi.com/v1/forecast.json?key=${API_WEATHER_KEY}&q=${lat},${lng}&days=3&aqi=no&alerts=no`,
+      { method: "GET" }
     );
     const result = await response.json();
 
@@ -80,7 +80,7 @@ async function getWeather(position) {
     }
   } else {
     const response = await fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=${API_WEATHER_KEY}&q=${position}&days=3&aqi=no&alerts=no`,
+      `https://api.weatherapi.com/v1/forecast.json?key=${API_WEATHER_KEY}&q=${position}&days=3&aqi=no&alerts=no`,
       { method: "GET" }
     );
     const result = await response.json();
